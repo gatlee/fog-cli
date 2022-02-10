@@ -1,5 +1,5 @@
 # fog-cli
-[Jog](https://github.com/natethinks/jog) + [fzf](https://github.com/junegunn/fzf) = fog
+[fzf](https://github.com/junegunn/fzf) + [Jog](https://github.com/natethinks/jog) = fog
 
 ## Prerequisites
 - fzf `brew install fzf`
