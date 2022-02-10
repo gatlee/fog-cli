@@ -1,8 +1,8 @@
 # fog-cli
-Improved jog cli with fzf integration
+[Jog](https://github.com/natethinks/jog) + [fzf](https://github.com/junegunn/fzf) = fog
 
 ## Prerequisites
-- fzf 
+- fzf `brew install fzf`
 - zsh
 
 
