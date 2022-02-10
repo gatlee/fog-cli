@@ -14,9 +14,17 @@ function zshaddhistory() {
 	echo "${1%%$'\n'}⋮${PWD}   " >> ~/.zsh_history_ext
 }
 
-alias fog=". fog.sh"
+function fog() {
+
+    COMMAND=$(grep -v "jog" ~/.zsh_history_ext | grep -a --color=never "${PWD}   " | cut -f1 -d"⋮" | sort | uniq -c | sort -r | fzf | sed 's/^ *//' | cut -d" " -f2-)
+
+    echo "$X⋮$(pwd)" >> ~/.zsh_history_ext
+    eval $X
+
+}
 ```
 
-2. Download or copy the `fog.sh` script from this repo and place it in your `$PATH`
-3. Restart terminal for changes to take effect
-4. Use fog whenever you find yourself lost and confused
+2. Restart terminal for changes to take effect
+3. Use fog whenever you find yourself lost and confused
+
+
