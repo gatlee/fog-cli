@@ -8,7 +8,7 @@ function fog() {
 
     COMMAND=$(grep -v "jog" ~/.zsh_history_ext | grep -a --color=never "${PWD}   " |
                   cut -f1 -d"⋮" |
-                  awk '{$1=$1};print'| # Trim whitespace
+                  sed 's/^[ ]*//;s/[ ]*$//' | # Trim whitespace
                   sort |
                   uniq -c |
                   sort -r |
