@@ -16,7 +16,7 @@ function fog() {
                   sed 's/^ *//' |
                   cut -d" " -f2-)
 
-    echo "$X⋮$(pwd)" >> ~/.zsh_history_ext
-    eval $X
+    echo "$COMMAND⋮$(pwd)" >> ~/.zsh_history_ext
+    eval $COMMAND
 
 }
