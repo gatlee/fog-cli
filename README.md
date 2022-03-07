@@ -8,6 +8,21 @@
 
 ## Installation Instructions
 
+### [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) (Recommended)
+1. Run these commands
+``` sh
+cd $ZSH_CUSTOM/plugins
+git clone git@github.com:gatlee/fog-cli.git fog
+```
+
+2. Add fog to your plugins
+
+``` sh
+plugins=(
+    fog
+)
+```
+
 ### Manual installation
 
 1. Add this to your `.zshrc`
@@ -29,17 +44,4 @@ function fog() {
 2. Restart terminal for changes to take effect
 3. Use fog whenever you find yourself lost and confused
 
-### [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-1. Run these commands
-``` sh
-cd $ZSH_CUSTOM/plugins
-git clone git@github.com:gatlee/fog-cli.git fog
-```
 
-2. Add fog to your plugins
-
-``` sh
-plugins=(
-    fog
-)
-```
